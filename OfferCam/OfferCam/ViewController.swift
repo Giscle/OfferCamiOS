@@ -20,6 +20,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func LogInFB(_ sender: Any) {
+        NextScreen()
+    }
+    
+    @IBAction func LogInGoogle(_ sender: Any) {
+        NextScreen()
+    }
+    func NextScreen()  {
+//        self.performSegue(withIdentifier: "segue", sender: nil)
+    }
 }
 
