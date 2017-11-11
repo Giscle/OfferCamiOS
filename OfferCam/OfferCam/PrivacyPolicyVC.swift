@@ -1,15 +1,14 @@
 //
-//  HomeVC.swift
+//  PrivacyPolicyVC.swift
 //  OfferCam
 //
-//  Created by Mac on 11/11/2017.
+//  Created by Aqeel on 11/11/17.
 //  Copyright © 2017 Aqeel. All rights reserved.
 //
 
 import UIKit
 
-class HomeVC: UIViewController {
-    
+class PrivacyPolicyVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,7 +17,7 @@ class HomeVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-      
+        
     }
     
     @IBAction func menuAction(_ sender: Any) {
@@ -27,8 +26,6 @@ class HomeVC: UIViewController {
     }
     
     deinit {
-        print("MainViewController deinit")
+        print("PrivacyViewController deinit")
     }
-    
 }
-
