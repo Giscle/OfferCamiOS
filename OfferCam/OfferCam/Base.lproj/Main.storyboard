@@ -159,6 +159,9 @@
                                 <state key="normal" title="Home">
                                     <color key="titleColor" red="0.99198132753372192" green="0.99604541063308716" blue="0.99596863985061646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="showHomeAction:" destination="JO4-Q8-cXQ" eventType="touchUpInside" id="5Gt-ed-Tt8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WH4-06-Qx8">
                                 <rect key="frame" x="0.0" y="265.5" width="250" height="50"/>
@@ -337,6 +340,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="250" height="667"/>
                     <connections>
+                        <outlet property="HomeBtn" destination="W7D-5M-Q2Z" id="isJ-U1-hBk"/>
                         <outlet property="profileLogo" destination="ljR-Ta-pjh" id="LGo-0B-dfw"/>
                     </connections>
                 </viewController>
@@ -359,7 +363,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="menue" id="Ydt-kC-B4k">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="menue:" destination="vZp-cD-Mja" id="xL5-py-RzF"/>
+                                <action selector="menuAction:" destination="vZp-cD-Mja" id="pNR-uy-Y8U"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -560,7 +564,6 @@
         <!--Navigation Controller-->
         <scene sceneID="oPr-aS-zOm">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dgV-SD-ptc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oGe-GK-eJ2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CFv-Wo-uJL">
@@ -572,6 +575,7 @@
                         <segue destination="vZp-cD-Mja" kind="relationship" relationship="rootViewController" id="KIE-J4-9JY"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgV-SD-ptc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="948" y="813"/>
         </scene>

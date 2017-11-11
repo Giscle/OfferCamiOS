@@ -14,18 +14,27 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func menue(_ sender: Any) {
-       
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if menuSelectionSegueID != "" {
+            //perform segue from here.
+            //
+            // reset menuSelectionSegueID after performing segue
+            menuSelectionSegueID = ""
+        }
     }
     
-   
+    @IBAction func menuAction(_ sender: Any) {
+        if let drawerController = navigationController?.parent as? KYDrawerController {
+            drawerController.setDrawerState(.opened, animated: true)
+        }
+    }
+    
+    deinit {
+        print("MainViewController deinit")
+    }
 
 }

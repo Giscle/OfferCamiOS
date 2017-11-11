@@ -7,31 +7,31 @@
 //
 
 import UIKit
+import KYDrawerController
+
+var menuSelectionSegueID:String = ""
 
 class DrawerViewController: UIViewController {
+    
     @IBOutlet weak var profileLogo: UIImageView!
+    @IBOutlet var HomeBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
         profileLogo.layer.cornerRadius = profileLogo.frame.size.width/2
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    @IBAction func showHomeAction(_ sender: Any) {
+        if let drawerController = self.parent as? KYDrawerController {
+            menuSelectionSegueID = (sender as! UIButton).currentTitle!
+            drawerController.setDrawerState(.closed, animated: true)
+        }
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    deinit {
+        print("DrawerViewController deinit")
     }
-    */
-
 }
