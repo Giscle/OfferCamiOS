@@ -14,9 +14,9 @@ class DrawerViewController: UIViewController {
     
     @IBOutlet weak var profileLogo: UIImageView!
     @IBOutlet var HomeBtn: UIButton!
-    @IBOutlet var AboutUsBtn: UIButton!
+
     
-    fileprivate var controllerIds = ["HomeNavVC","AboutUsNavVC","TripLogNavVC","UploadNavVC","PrivacyPolicyNavVC","SupportNavVC"]
+    fileprivate var controllerIds = ["HomeNavVC","TripLogNavVC","UploadNavVC","PrivacyPolicyNavVC","FAQsNavVC","ProfileNavVC"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +35,28 @@ class DrawerViewController: UIViewController {
     }
     
     @IBAction func LogoutButton(_ sender: Any) {
+        alertBox(msg: "Are you sure you want to Logout")
     }
     
     
     
     deinit {
         print("DrawerViewController deinit")
+    }
+    
+    func alertBox(msg : String)  {
+        let alert = UIAlertController(title: "Notice", message: msg, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler: { (myUIAction) in
+            let mainViewController = self.sideMenuController!
+            mainViewController.dismiss(animated: true, completion: nil)
+            
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.destructive, handler: { (myUIAction) in
+            let mainViewController = self.sideMenuController!
+            mainViewController.hideLeftView(animated: true, completionHandler: nil)
+        }))
+        //        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+        alert.view.layer.cornerRadius = 15
+        self.present(alert, animated: true, completion: nil)
     }
 }

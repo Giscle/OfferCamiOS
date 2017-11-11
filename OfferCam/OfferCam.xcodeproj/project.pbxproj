@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		04E5888A1FB7644E00B22B1C /* MainLGSideViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E588891FB7644E00B22B1C /* MainLGSideViewVC.swift */; };
 		04E5888C1FB764DE00B22B1C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5888B1FB764DE00B22B1C /* HomeVC.swift */; };
-		04E5888E1FB7656800B22B1C /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5888D1FB7656800B22B1C /* AboutUsVC.swift */; };
 		59679C0418BE539A61E88C32 /* Pods_OfferCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEC33603EAD41725A4EE5E2 /* Pods_OfferCam.framework */; };
 		A06B281D1FB2385D008E27D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B281C1FB2385D008E27D5 /* AppDelegate.swift */; };
 		A06B281F1FB2385D008E27D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B281E1FB2385D008E27D5 /* ViewController.swift */; };
@@ -21,13 +20,13 @@
 		A0D43BEA1FB779B2006A95C5 /* TripLogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D43BE91FB779B2006A95C5 /* TripLogVC.swift */; };
 		A0D43BEC1FB779D4006A95C5 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D43BEB1FB779D4006A95C5 /* UploadVC.swift */; };
 		A0D43BEE1FB779F2006A95C5 /* PrivacyPolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D43BED1FB779F2006A95C5 /* PrivacyPolicyVC.swift */; };
-		A0D43BF01FB77A13006A95C5 /* SupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D43BEF1FB77A13006A95C5 /* SupportVC.swift */; };
+		A0D43BF21FB78C12006A95C5 /* FAQsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D43BF11FB78C12006A95C5 /* FAQsVC.swift */; };
+		A0D43BF41FB78DCA006A95C5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D43BF31FB78DCA006A95C5 /* ProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04E588891FB7644E00B22B1C /* MainLGSideViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainLGSideViewVC.swift; sourceTree = "<group>"; };
 		04E5888B1FB764DE00B22B1C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		04E5888D1FB7656800B22B1C /* AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
 		39B3665B666B1D4CE80A31C8 /* Pods-OfferCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfferCam.release.xcconfig"; path = "Pods/Target Support Files/Pods-OfferCam/Pods-OfferCam.release.xcconfig"; sourceTree = "<group>"; };
 		7640C3871F91A8E1F53D06F1 /* Pods-OfferCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfferCam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OfferCam/Pods-OfferCam.debug.xcconfig"; sourceTree = "<group>"; };
 		7BEC33603EAD41725A4EE5E2 /* Pods_OfferCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OfferCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,7 +42,8 @@
 		A0D43BE91FB779B2006A95C5 /* TripLogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripLogVC.swift; sourceTree = "<group>"; };
 		A0D43BEB1FB779D4006A95C5 /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 		A0D43BED1FB779F2006A95C5 /* PrivacyPolicyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyVC.swift; sourceTree = "<group>"; };
-		A0D43BEF1FB77A13006A95C5 /* SupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVC.swift; sourceTree = "<group>"; };
+		A0D43BF11FB78C12006A95C5 /* FAQsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQsVC.swift; sourceTree = "<group>"; };
+		A0D43BF31FB78DCA006A95C5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,11 +89,11 @@
 				04E588891FB7644E00B22B1C /* MainLGSideViewVC.swift */,
 				A0D43BE71FB4B7A4006A95C5 /* DrawerViewController.swift */,
 				04E5888B1FB764DE00B22B1C /* HomeVC.swift */,
-				04E5888D1FB7656800B22B1C /* AboutUsVC.swift */,
 				A0D43BE91FB779B2006A95C5 /* TripLogVC.swift */,
 				A0D43BEB1FB779D4006A95C5 /* UploadVC.swift */,
 				A0D43BED1FB779F2006A95C5 /* PrivacyPolicyVC.swift */,
-				A0D43BEF1FB77A13006A95C5 /* SupportVC.swift */,
+				A0D43BF11FB78C12006A95C5 /* FAQsVC.swift */,
+				A0D43BF31FB78DCA006A95C5 /* ProfileVC.swift */,
 			);
 			path = OfferCam;
 			sourceTree = "<group>";
@@ -248,13 +248,13 @@
 				A0D43BEE1FB779F2006A95C5 /* PrivacyPolicyVC.swift in Sources */,
 				A06B281F1FB2385D008E27D5 /* ViewController.swift in Sources */,
 				A06B281D1FB2385D008E27D5 /* AppDelegate.swift in Sources */,
-				04E5888E1FB7656800B22B1C /* AboutUsVC.swift in Sources */,
 				A0D43BEA1FB779B2006A95C5 /* TripLogVC.swift in Sources */,
-				A0D43BF01FB77A13006A95C5 /* SupportVC.swift in Sources */,
 				04E5888C1FB764DE00B22B1C /* HomeVC.swift in Sources */,
 				A0D43BE81FB4B7A4006A95C5 /* DrawerViewController.swift in Sources */,
 				A0D43BEC1FB779D4006A95C5 /* UploadVC.swift in Sources */,
 				A06B28251FB2385D008E27D5 /* OfferCam.xcdatamodeld in Sources */,
+				A0D43BF41FB78DCA006A95C5 /* ProfileVC.swift in Sources */,
+				A0D43BF21FB78C12006A95C5 /* FAQsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
