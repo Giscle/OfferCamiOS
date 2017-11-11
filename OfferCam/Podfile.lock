@@ -1,12 +1,12 @@
 PODS:
-  - KYDrawerController (2.0.4)
+  - LGSideMenuController (2.1.1)
 
 DEPENDENCIES:
-  - KYDrawerController
+  - LGSideMenuController
 
 SPEC CHECKSUMS:
-  KYDrawerController: cf5839877c442132123e9d482f458821026defdf
+  LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
 
-PODFILE CHECKSUM: 93615a0d8c180402da9c6c9b86bf86bf98620f28
+PODFILE CHECKSUM: ae980455ac1766072f373bc1ec29801e961cf647
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1

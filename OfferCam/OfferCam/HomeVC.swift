@@ -1,19 +1,18 @@
 //
-//  MainViewController.swift
+//  HomeVC.swift
 //  OfferCam
 //
-//  Created by Aqeel on 11/9/17.
+//  Created by Mac on 11/11/2017.
 //  Copyright © 2017 Aqeel. All rights reserved.
 //
 
 import UIKit
-import KYDrawerController
 
-class MainViewController: UIViewController {
-
+class HomeVC: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -28,13 +27,13 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func menuAction(_ sender: Any) {
-        if let drawerController = navigationController?.parent as? KYDrawerController {
-            drawerController.setDrawerState(.opened, animated: true)
-        }
+        let mainController = sideMenuController!
+        mainController.showLeftView(animated: true, completionHandler: nil)
     }
     
     deinit {
         print("MainViewController deinit")
     }
-
+    
 }
+

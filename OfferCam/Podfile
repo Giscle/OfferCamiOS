@@ -6,5 +6,5 @@ target 'OfferCam' do
   use_frameworks!
 
   # Pods for OfferCam
-pod 'KYDrawerController'
+pod 'LGSideMenuController'
 end

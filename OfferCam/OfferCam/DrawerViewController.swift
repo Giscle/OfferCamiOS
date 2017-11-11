@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import KYDrawerController
 
 var menuSelectionSegueID:String = ""
 
@@ -17,18 +16,22 @@ class DrawerViewController: UIViewController {
     @IBOutlet var HomeBtn: UIButton!
     @IBOutlet var AboutUsBtn: UIButton!
     
+    fileprivate var controllerIds = ["HomeNavVC","AboutUsNavVC"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         profileLogo.layer.cornerRadius = profileLogo.frame.size.width/2
     }
     
+    func getViewController(index: Int) -> UIViewController {
+        return storyboard?.instantiateViewController(withIdentifier: controllerIds[index]) as! UINavigationController
+    }
     
     @IBAction func menuSegueAction(_ sender: Any) {
-        if let drawerController = self.parent as? KYDrawerController {
-            menuSelectionSegueID = (sender as! UIButton).currentTitle!
-            drawerController.setDrawerState(.closed, animated: true)
-        }
+        let mainViewController = sideMenuController!
+        mainViewController.hideLeftView(animated: true, completionHandler: nil)
+        mainViewController.rootViewController =  getViewController(index: (sender as! UIButton).tag)
     }
     
 
