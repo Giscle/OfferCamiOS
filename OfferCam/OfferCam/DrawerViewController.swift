@@ -15,6 +15,7 @@ class DrawerViewController: UIViewController {
     
     @IBOutlet weak var profileLogo: UIImageView!
     @IBOutlet var HomeBtn: UIButton!
+    @IBOutlet var AboutUsBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,7 @@ class DrawerViewController: UIViewController {
     }
     
     
-    @IBAction func showHomeAction(_ sender: Any) {
+    @IBAction func menuSegueAction(_ sender: Any) {
         if let drawerController = self.parent as? KYDrawerController {
             menuSelectionSegueID = (sender as! UIButton).currentTitle!
             drawerController.setDrawerState(.closed, animated: true)

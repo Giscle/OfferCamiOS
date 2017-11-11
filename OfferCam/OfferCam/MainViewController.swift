@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
         
         if menuSelectionSegueID != "" {
             //perform segue from here.
-            //
+            self.performSegue(withIdentifier: menuSelectionSegueID, sender: nil)
             // reset menuSelectionSegueID after performing segue
             menuSelectionSegueID = ""
         }
