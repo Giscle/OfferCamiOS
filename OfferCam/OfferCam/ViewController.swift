@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         NextScreen()
     }
     func NextScreen()  {
-//        self.performSegue(withIdentifier: "segue", sender: nil)
+        self.performSegue(withIdentifier: "segue", sender: nil)
     }
 }
 
