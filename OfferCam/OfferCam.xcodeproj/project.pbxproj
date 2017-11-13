@@ -10,6 +10,8 @@
 		04E5888A1FB7644E00B22B1C /* MainLGSideViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E588891FB7644E00B22B1C /* MainLGSideViewVC.swift */; };
 		04E5888C1FB764DE00B22B1C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5888B1FB764DE00B22B1C /* HomeVC.swift */; };
 		59679C0418BE539A61E88C32 /* Pods_OfferCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEC33603EAD41725A4EE5E2 /* Pods_OfferCam.framework */; };
+		A04B3CA31FB9B811002F4521 /* CollectionVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B3CA11FB9B811002F4521 /* CollectionVCell.swift */; };
+		A04B3CA41FB9B811002F4521 /* CollectionVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04B3CA21FB9B811002F4521 /* CollectionVCell.xib */; };
 		A06B281D1FB2385D008E27D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B281C1FB2385D008E27D5 /* AppDelegate.swift */; };
 		A06B281F1FB2385D008E27D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B281E1FB2385D008E27D5 /* ViewController.swift */; };
 		A06B28221FB2385D008E27D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06B28201FB2385D008E27D5 /* Main.storyboard */; };
@@ -22,6 +24,7 @@
 		A0D43BEE1FB779F2006A95C5 /* PrivacyPolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D43BED1FB779F2006A95C5 /* PrivacyPolicyVC.swift */; };
 		A0D43BF21FB78C12006A95C5 /* FAQsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D43BF11FB78C12006A95C5 /* FAQsVC.swift */; };
 		A0D43BF41FB78DCA006A95C5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D43BF31FB78DCA006A95C5 /* ProfileVC.swift */; };
+		A0D43BF61FB98371006A95C5 /* PrivacyPolicy.html in Resources */ = {isa = PBXBuildFile; fileRef = A0D43BF51FB98370006A95C5 /* PrivacyPolicy.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,8 @@
 		39B3665B666B1D4CE80A31C8 /* Pods-OfferCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfferCam.release.xcconfig"; path = "Pods/Target Support Files/Pods-OfferCam/Pods-OfferCam.release.xcconfig"; sourceTree = "<group>"; };
 		7640C3871F91A8E1F53D06F1 /* Pods-OfferCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfferCam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OfferCam/Pods-OfferCam.debug.xcconfig"; sourceTree = "<group>"; };
 		7BEC33603EAD41725A4EE5E2 /* Pods_OfferCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OfferCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04B3CA11FB9B811002F4521 /* CollectionVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVCell.swift; sourceTree = "<group>"; };
+		A04B3CA21FB9B811002F4521 /* CollectionVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionVCell.xib; sourceTree = "<group>"; };
 		A06B28191FB2385D008E27D5 /* OfferCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfferCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06B281C1FB2385D008E27D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A06B281E1FB2385D008E27D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 		A0D43BED1FB779F2006A95C5 /* PrivacyPolicyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyVC.swift; sourceTree = "<group>"; };
 		A0D43BF11FB78C12006A95C5 /* FAQsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQsVC.swift; sourceTree = "<group>"; };
 		A0D43BF31FB78DCA006A95C5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		A0D43BF51FB98370006A95C5 /* PrivacyPolicy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PrivacyPolicy.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A04B3CA01FB9B78F002F4521 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				A0D43BF51FB98370006A95C5 /* PrivacyPolicy.html */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
 		A06B28101FB2385D008E27D5 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +93,7 @@
 		A06B281B1FB2385D008E27D5 /* OfferCam */ = {
 			isa = PBXGroup;
 			children = (
+				A04B3CA01FB9B78F002F4521 /* Supporting */,
 				A06B281C1FB2385D008E27D5 /* AppDelegate.swift */,
 				A06B281E1FB2385D008E27D5 /* ViewController.swift */,
 				A06B28201FB2385D008E27D5 /* Main.storyboard */,
@@ -94,6 +109,8 @@
 				A0D43BED1FB779F2006A95C5 /* PrivacyPolicyVC.swift */,
 				A0D43BF11FB78C12006A95C5 /* FAQsVC.swift */,
 				A0D43BF31FB78DCA006A95C5 /* ProfileVC.swift */,
+				A04B3CA11FB9B811002F4521 /* CollectionVCell.swift */,
+				A04B3CA21FB9B811002F4521 /* CollectionVCell.xib */,
 			);
 			path = OfferCam;
 			sourceTree = "<group>";
@@ -177,9 +194,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04B3CA41FB9B811002F4521 /* CollectionVCell.xib in Resources */,
 				A06B282A1FB2385D008E27D5 /* LaunchScreen.storyboard in Resources */,
 				A06B28271FB2385D008E27D5 /* Assets.xcassets in Resources */,
 				A06B28221FB2385D008E27D5 /* Main.storyboard in Resources */,
+				A0D43BF61FB98371006A95C5 /* PrivacyPolicy.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +273,7 @@
 				A0D43BEC1FB779D4006A95C5 /* UploadVC.swift in Sources */,
 				A06B28251FB2385D008E27D5 /* OfferCam.xcdatamodeld in Sources */,
 				A0D43BF41FB78DCA006A95C5 /* ProfileVC.swift in Sources */,
+				A04B3CA31FB9B811002F4521 /* CollectionVCell.swift in Sources */,
 				A0D43BF21FB78C12006A95C5 /* FAQsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

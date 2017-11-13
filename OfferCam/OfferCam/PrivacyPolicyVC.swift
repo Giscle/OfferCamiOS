@@ -8,15 +8,21 @@
 
 import UIKit
 
-class PrivacyPolicyVC: UIViewController {
+class PrivacyPolicyVC: UIViewController , UIWebViewDelegate {
+    
+    @IBOutlet weak var WebView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        guard let path = Bundle.main.path(forResource: "PrivacyPolicy", ofType: "html") else{
+            return
+        }
+        let filePath = URL(fileURLWithPath: path)
+        WebView.loadRequest(URLRequest(url: filePath))
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         
     }
     
